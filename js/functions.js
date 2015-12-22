@@ -19,6 +19,7 @@ Modernizr.load([{
       Modernizr.load('/js/jquery-1.11.1.min.js');
       Modernizr.load('/js/History.js');
       Modernizr.load('/js/jquery.nstSlider.min.js');
+      Modernizr.load('/js/ytLoad/jquery.transit.js');
       Modernizr.load('/js/ytLoad/ytLoad.jquery.js');
       Modernizr.load('/js/jquery.slicknav.min.js');
       Modernizr.load('/popup/jquery.magnific-popup.min.js');
@@ -28,6 +29,7 @@ Modernizr.load([{
     } else {
       sload('/js/History.js');
       sload('/js/jquery.nstSlider.min.js');
+      sload('/js/ytLoad/jquery.transit.js');
       sload('/js/ytLoad/ytLoad.jquery.js');
       sload('/js/imgload.js');
       sload('/js/jquery.slicknav.min.js');
