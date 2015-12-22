@@ -1,0 +1,364 @@
+/* nst slider */
+
+.is_clickable {
+  cursor: pointer;
+}
+
+.nstSlider {
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 150px;
+  height: 20px;
+  /* bottom: 14%; */
+  /* left: 68px; */
+  z-index: 5;
+  position:relative;
+  opacity: 1;
+  margin: 5px 0px 0px 0px;
+}
+
+.nstSlider::before {
+  content: '-';
+  float: left;
+  font-size: 25px;
+  color: #fff;
+}
+
+.nstSlider::after {
+  content: '+';
+  float: right;
+  font-size: 25px;
+  color: #fff;
+  margin-top: -4px;
+}
+
+.nstSlider .leftGrip.gripHighlighted,.nstSlider .rightGrip.gripHighlighted {
+  background: #134;
+}
+
+.nstSlider .leftGrip,.nstSlider .rightGrip {
+  position: absolute;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+}
+
+.nstSlider .bar {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  background: #006b94;
+  height: 8px;
+  top: 6px;
+}
+
+.nstSlider .highlightPanel {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  background: #e87722;
+  height: 20px;
+  top: 0;
+}
+
+/*
+    Mobile Menu Core Style
+*/
+
+.loginmenu {
+	background-color: #555;
+}
+.loginmenu img {
+	height: 24px; width: 24px; vertical-align: middle;
+}
+.loginmenu a {
+	text-align: center !important;
+}
+.slicknav_btn {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  float: left;
+  padding: 0.438em 0.625em 0.438em 0.625em;
+  line-height: 1.125em;
+  cursor: pointer;
+}
+
+.slicknav_menu  .slicknav_menutxt {
+  display: block;
+  line-height: 1.188em;
+  float: left;
+}
+
+.slicknav_menu .slicknav_icon {
+  float: left;
+  margin: 0.188em 0 0 0.438em;
+}
+
+.slicknav_menu .slicknav_no-text {
+  margin: 0;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+  display: block;
+  width: 1.125em;
+  height: 0.125em;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+  margin-top: 0.188em;
+}
+
+.slicknav_nav {
+  clear: both;
+}
+
+.slicknav_nav ul,
+.slicknav_nav li {
+  display: block;
+}
+
+.slicknav_nav .slicknav_arrow {
+  font-size: 0.8em;
+  margin: 0 0 0 0.4em;
+}
+
+.slicknav_nav .slicknav_item {
+  cursor: pointer;
+}
+
+.slicknav_nav .slicknav_row {
+  display: block;
+}
+
+.slicknav_nav a {
+  display: block;
+}
+
+.slicknav_nav .slicknav_item a,
+.slicknav_nav .slicknav_parent-link a {
+  display: inline;
+}
+
+.slicknav_menu:before,
+.slicknav_menu:after {
+  content: " ";
+  display: table;
+}
+
+.slicknav_menu:after {
+  clear: both;
+}
+.slicknav_menu {
+  zoom: 1;
+}
+
+/*
+    User Default Style
+    Change the following styles to modify the appearance of the menu.
+*/
+
+.slicknav_menu {
+  font-size: 16px;
+  display: none;
+}
+/* Button */
+.slicknav_btn {
+  margin-left: 5px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #222222;
+}
+/* Button Text */
+.slicknav_menu  .slicknav_menutxt {
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 0 1px 3px #000;
+}
+/* Button Lines */
+.slicknav_menu .slicknav_icon-bar {
+  background-color: #f5f5f5;
+}
+
+.slicknav_menu {
+  background: #373636;
+  padding: 4px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 51;
+}
+
+.slicknav_nav {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875em;
+}
+
+.slicknav_nav, .slicknav_nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+.slicknav_nav ul {
+  padding: 0;
+  margin: 0 0 0 0px;
+}
+
+.slicknav_nav .slicknav_row {
+  padding: 5px 10px;
+  margin: 2px 5px;
+}
+
+.slicknav_nav li div a {
+  padding-left: 60px;
+}
+
+.slicknav_nav a {
+  padding: 6px 25px;
+  margin: 2px 5px;
+  text-decoration: none;
+  color: #fff;
+  text-align: justify;
+  transition: all 0.3s ease;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.slicknav_nav .slicknav_item a,
+.slicknav_nav .slicknav_parent-link a {
+  padding: 0;
+  margin: 0;
+}
+
+.slicknav_nav .slicknav_row:hover {
+  background: #ccc;
+  color: #fff;
+}
+
+.slicknav_nav a:hover {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: #ccc;
+  color: #222;
+    text-indent: 10px;
+    transition: all 0.3s ease;
+}
+
+.slicknav_nav .slicknav_txtnode {
+  margin-left: 15px;
+}
+
+
+/* yt load */
+
+.ytLoad {
+  position: fixed;
+  z-index: 2147483647;
+  top: 0;
+  left: -6px;
+  width: 0;
+  height: 3px;
+  background: rgb(88, 100, 109);
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+}
+
+.ytLoad.error {
+  background: #C20A47;
+}
+
+.ytLoad dd,.ytLoad dt {
+  position: absolute;
+  top: 0;
+  height: 2px;
+  -moz-box-shadow: #C9312C 1px 0 6px 1px;
+  -ms-box-shadow: #C9312C 1px 0 6px 1px;
+  -webkit-box-shadow: #C9312C 1px 0 6px 1px;
+  box-shadow: #C9312C 1px 0 6px 1px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.ytLoad.error dd,.ytLoad.error dt {
+  -moz-box-shadow: #C20A47 1px 0 6px 1px;
+  -ms-box-shadow: #C20A47 1px 0 6px 1px;
+  -webkit-box-shadow: #C20A47 1px 0 6px 1px;
+  box-shadow: #C20A47 1px 0 6px 1px;
+}
+
+.ytLoad dt {
+  opacity: .6;
+  width: 180px;
+  right: -80px;
+  clip: rect(-6px,90px,14px,-6px);
+}
+
+.ytLoad dd {
+  opacity: .6;
+  width: 20px;
+  right: 0;
+  clip: rect(-6px,22px,14px,10px);
+}
+
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9 lt-ie10" lang="en"><![endif]-->
+<!--[if lte IE 9]><html class="no-js lt-ie10" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<title>Web Wrangler | Josh Hare</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Joshua Hare, web design and developer, musician, self promoting usual nonsense brand creation. 8)">
+	<meta name="keywords"    content="web designer, NZ web developer">
+	<meta name="author" content="Josh Hare http://inspyre.nz">
+	<meta property="og:title" content="Home is where the nav starts | Josh Hare ">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Josh Hare">
+	<meta property="og:url" content="http://joshhare.me/">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+	<!-- Insypre Main Stylesheet --><link href="/style.css" type="text/css" rel="stylesheet">
+	<link rel='stylesheet' type='text/css' href='/media.css'>
+	<link rel="stylesheet" href="/js/outdatedbrowser/outdatedbrowser.min.css">
+		<link rel="stylesheet" href="/popup/magnific-popup.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<script src="/js/modernizr.js"></script>
+
+	<script src="/js/functions.js">
+</script>
+
+	</head>
+	<body>
+	<div id="background"></div>
+	<div id="container">
+	<header>
+	<div id="header">
+	<!-- div id="ielogo"><img id="toplogo" src="/images/josh-hare-logo-ie.png" alt="Josh Hare Web Developer "></div -->
+	<nav class="menu" id="menu">
+	    <ul id="menunit"><li><a href="/">Home</a></li><li><a href="/about.html">About</a></li><li><a href="/portfolio.html">Portfolio</a></li><li><a href="/contact.html">Contact</a></li></ul>
+		</nav>
+	    </div>
+
+	    <div id="spinner"></div>
+	<div class="badge" id="badge"  data-tooltip="Click on the top links to navigate into the website. Feeling adventurous? Click some buttons and move the slider in the bottom left corner of the screen."  >
+		<div><span class="primary change" id="currentPalette">Pantones of Fall 2015</span></div>
+	<div id="logo" class="logo">
+			<div>
+      <a class="nav primary" href="/about.html">about</a>
+      <a class="nav primary" href="/portfolio.html">portfolio</a>
+			<a class="nav primary" href="/contact.html">contact</a>
+    </div>
+
+</div>
+
+	</div>
+
+	</header>
+
+	<div class="content">
+
+
+<h3>&nbsp;About Josh Hare</h3>
+
+
+<p><em><a href="/portfolio">Take a look at our portfolio for examples of our previous work.</a></em></p>
+
+
+<p><em style="line-height: 1.5em;"><a href="/contact">Visit the Contact Page</a></em></p>
+
+<p class="copyright">Copyright &copy; Josh Hare, 2015</p>
+</div>
+<!-- close content above. close container below -->
+<div class="clear"></div>
+</div>
+
+<!--[if !IE]><!-->
+	<div id="preloader">
+	<div id="status">&nbsp;</div>
+	<div class="clear"></div>
+	<div id="msg">Welcome</div>
+
+<script type="text/javascript">
+var msg = document.getElementById('msg');
+var msgs = new Array("Welcome");
+        var nums = 0;
+        function dyk()
+        {
+            msg.innerHTML = msgs[nums];
+
+            if(nums < msgs.length-1)
+            {
+                nums++;
+            }
+            else
+            {
+                nums = 0;
+            }
+            setTimeout("dyk();",4000);
+        }
+
+        dyk();
+
+</script>
+	</div>
+
+
+
+<!--<![endif]-->
+<footer>
+	<div class="palettes hide" id="palettes">
+		<div id="palettesContainer">
+		<div class="closeButton is_clickable">X</div>
+			<span>Pantone Palette Picker</span><br>
+		</div>
+
+	</div>
+	<div id="functions">
+		<div id="help" data-tooltip="Welcome to the home of Josh Hare, a web designer from New Zealand. Hover over an element for a description and enjoy the pantone palettes.">website help
+		</div>
+
+		<div id="change" data-tooltip="You always have a choice, choose wisely">change palette</div>
+		<div id="palette" class="slant" data-tooltip="Click me to change the world. You would think my love was really something good. Baby if I could (change the world)">refresh palette</div>
+		<div id="minimise" data-tooltip="Tired of the same old words? Need a new screen saver? This has you written all over it">background mode</div>
+				<div id="screenshot" onclick="screenshot()" data-tooltip="Using html2canvas we can grab our background and open it in a new tab - pretty neat, we're making an image out of dom elements!">screenshot background</div>
+		<div class="nstSlider" data-range_min="1" data-range_max="30"
+												 data-cur_min="5"     data-cur_max="15">
+												 <div class="bar"></div>
+			<div class="leftGrip"></div>
+</div>
+
+	</div>
+
+
+
+    <div id="outdated"></div>
+	<!-- javascript includes -->
+	<script src="/js/outdatedbrowser/outdatedbrowser.min.js"></script>
+	<!-- plugin call -->
+	<script>
+	//event listener form DOM ready
+	function addLoadEvent(func) {
+	  var oldonload = window.onload;
+	  if (typeof window.onload != 'function') {
+	    window.onload = func;
+	  } else {
+	    window.onload = function() {
+	      if (oldonload) {
+	        oldonload();
+	      }
+	      func();
+	    }
+	  }
+	}
+	//call function after DOM ready
+	addLoadEvent(function(){
+	  outdatedBrowser({
+	    bgColor: '#f25648',
+	    color: '#ffffff',
+	    lowerThan: 'transform',
+	    languagePath: '/js/outdatedbrowser/lang/en.html'
+	  })
+	});
+
+  window.onload = initBackground();
+
+
+	</script>
+
+
+
+	</footer>
+</body>
+</html>
