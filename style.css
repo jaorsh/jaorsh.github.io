@@ -763,3 +763,8 @@ span.sorrynotsorry {
     margin: auto;
     right: 0;
 }
+
+.hometitle a {
+    font-size: 2em;
+    line-height: 1.3em;
+}
