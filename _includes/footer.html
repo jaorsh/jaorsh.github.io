@@ -1,0 +1,134 @@
+<!--[if !IE]><!-->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+  <div class="clear"></div>
+  <div id="msg">Welcome</div>
+
+  <script type="text/javascript">
+    var msg = document.getElementById('msg');
+    var msgs = new Array("Welcome");
+    var nums = 0;
+
+    function dyk() {
+      msg.innerHTML = msgs[nums];
+
+      if (nums < msgs.length - 1) {
+        nums++;
+      } else {
+        nums = 0;
+      }
+      setTimeout("dyk();", 4000);
+    }
+
+    dyk();
+  </script>
+</div>
+  <!--<![endif]-->
+  <footer>
+    <div class="overlay palettes primary noselect" id="palettes">
+      <div class="closeButton is_clickable">X</div>
+      <div id="palettesContainer">
+
+        <h2>Pantone Palette Picker</h2>
+        <br>
+      </div>
+
+    </div>
+    <div class="overlay help">
+      <div class="closeButton is_clickable">X</div>
+      <div class="helpinner">
+        <div class="big">yo </div>
+      Welcome to the website of Josh Hare, a front end web designer from New Zealand.
+      <br><br>
+      <div class="big">switch</div>
+    We're going to switch tense to first person so I can write.<br>
+    <br><br>
+      <div class="big">website</div>
+      This website is inspired from the <a href="http://pantone.com">Pantone color authority</a>, though not in any way affiliated. I just love digital color. <br><br>
+      <div class="big">color</div>
+     Choosing a color scheme is a huge part of developing anything digital. From a simple user interface to complete branding marketing materials, color is a critical factor in how approachable a design is. I want to make an interface which feels fresh, and this is the beginning.
+     <br><br>
+<div class="big">pantone</div>
+       The No.1 cool thing about Pantone palettes has got to be the carefully thought out relationships between every range of colors. Beautiful complementary tones. My favourite palette on this website is the `Pantones of Fall 2016`, check it out by clicking `change palette` in the bottom left corner. Have a play around - you won't break anything. Got any ideas how this could be doperer? Flick me a message.
+       <br><br>
+       <div class="big">legibility</div>
+       In recent years thin fonts have become a standard in quickly achieving a professional typeface. So what's good? Let's compare.<br>
+       <p style="font-size:28px; font-weight:700">I'm bold, bold as love.</p>
+         <p style="font-size:28px;  font-weight:400">I'm normal, normal as love.</p>
+           <p style="font-size:28px; font-weight:300">I'm light, light as love.</p>
+          <p style="font-size:28px; font-weight:100">I'm thin, thin as love.</p>
+          On this page we are using the light `Lato` font for the body text. Thin is a little too skinny to being truly legible for body text but with a large font size, say 40px, it looks good. Always a toss up between aesthetic and usability. Though are blessed because beauty is in the eye of the beholder. I reckon,
+           <p style="font-size:44px; line-height:44px; font-weight:100">Thin fonts can pack a punch.</p>
+           Yeah, well, that's just, like, your opinion, man.
+<br><br>
+           <div class="big">star wars vs good code</div>
+           A crucial usability factor when using a code editor is the theme. My code editor is Star Wars themed - this only serving a purpose of enjoyment - and STILL I type more stuff, I'm more engaged. How come that's even a thing? Dunno why, but I sacrifice legibility for style. It's less readable than it is with a light theme yet I will have more concentration on it because of the visual appeal. Like the old geezer with the pink speedos on the beach all summer. Not really like that but we've all been there.<br><br>
+           <div class="big">enjoy your stay</div>
+           Thanks for coming. Merci beaucoup.<br><br>
+
+    </div>
+
+    </div>
+    <div id="functions" class="noselect">
+      <div id="help" data-tooltip="Click here for more info, hover over an element for a description and enjoy the pantone palettes.">website help
+      </div>
+
+      <div id="change" data-tooltip="You have a choice, choose wisely">change palette</div>
+      <div id="palette" class="slant" data-tooltip="Click me to change the world. You would think my love was really something good. Baby if I could (change the world)">refresh palette</div>
+      <div id="minimise" data-tooltip="Tired of the same old words? Need a new screen saver? This has you written all over it">background mode</div>
+      <div id="screenshot" onclick="pan.dom.screenshot()" data-tooltip="Using html2canvas we can grab our background and open it in a new tab - pretty neat, we're making an image out of dom elements.">screenshot background</div>
+      <div class="nstSlider" data-range_min="1" data-range_max="30" data-cur_min="5" data-cur_max="15">
+        <div class="bar"></div>
+        <div class="leftGrip"></div>
+      </div>
+
+    </div>
+
+
+    <div id="outdated"></div>
+    <!-- javascript includes -->
+    <script src="/js/outdatedbrowser/outdatedbrowser.min.js"></script>
+    <!-- plugin call -->
+    <script>
+      //event listener form DOM ready
+      function addLoadEvent(func) {
+          var oldonload = window.onload;
+          if (typeof window.onload != 'function') {
+            window.onload = func;
+          } else {
+            window.onload = function() {
+              if (oldonload) {
+                oldonload();
+              }
+              func();
+            }
+          }
+        }
+        //call function after DOM ready
+      addLoadEvent(function() {
+        outdatedBrowser({
+          bgColor: '#f25648',
+          color: '#ffffff',
+          lowerThan: 'transform',
+          languagePath: '/js/outdatedbrowser/lang/en.html'
+        })
+      });
+
+      window.onload = pan.initBackground();
+    </script>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71873742-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </footer>
+</body>
+
+</html>

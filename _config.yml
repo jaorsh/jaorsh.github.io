@@ -1,0 +1,2 @@
+exclude: ['/node_modules','entry.js','gulpfile.js','package.json']
+permalink: pretty
