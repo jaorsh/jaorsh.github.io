@@ -25,6 +25,9 @@
 </div>
   <!--<![endif]-->
   <footer>
+
+    <div class="showtooltip hidetooltip"  data-tooltip="Click to close">Welcome! This interactive website is all about color. You can select your color scheme using the `change palette` link found in the bottom corner. You can change the pattern size using the slider. Don't worry this isn't a no touch shop - you won't break anything - so have a play. Click me to close.
+    </div>
     <div class="overlay palettes primary noselect" id="palettes">
       <div class="closeButton is_clickable">X</div>
       <div id="palettesContainer">
@@ -70,6 +73,7 @@
 
     </div>
     <div id="functions" class="noselect">
+
       <div id="help" data-tooltip="Click here for more info, hover over an element for a description and enjoy the pantone palettes.">website help
       </div>
 
@@ -77,7 +81,7 @@
       <div id="palette" class="slant" data-tooltip="Click me to change the world. You would think my love was really something good. Baby if I could (change the world)">refresh palette</div>
       <div id="minimise" data-tooltip="Tired of the same old words? Need a new screen saver? This has you written all over it">background mode</div>
       <div id="screenshot" onclick="pan.dom.screenshot()" data-tooltip="Using html2canvas we can grab our background and open it in a new tab - pretty neat, we're making an image out of dom elements.">screenshot background</div>
-      <div class="nstSlider" data-range_min="1" data-range_max="30" data-cur_min="5" data-cur_max="15">
+      <div data-tooltip="Drag me side to side to adjust our background. Grooovy." class="nstSlider" data-range_min="1" data-range_max="30" data-cur_min="5" data-cur_max="15">
         <div class="bar"></div>
         <div class="leftGrip"></div>
       </div>
@@ -115,6 +119,9 @@
       });
 
       window.onload = pan.initBackground();
+      var walk = document.getElementById('walkthrough');
+
+$('.showtooltip').click(function(){ $(this).hide()});
     </script>
 		<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

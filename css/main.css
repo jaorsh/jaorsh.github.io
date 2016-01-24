@@ -447,7 +447,7 @@ textarea:focus {
 
 /* Sweet CSS Only Tooltips from http://jsfiddle.net/AndreaLigios/jtLbpy62/ Cheers Mr Ligios! */
 
-[data-tooltip]:before {
+[data-tooltip]:before, .hidetooltip {
     content: attr(data-tooltip);
     opacity: 0;
     margin: -100px 20px;
@@ -458,7 +458,7 @@ textarea:focus {
     box-shadow: 2px 2px 2px #555;
     max-width: 300px;
     top: 0 !important;
-    left: 0 !important;
+    right: 0 !important;
     position: fixed !important;
     z-index: 1000;
     font-size: 14px;
@@ -466,19 +466,23 @@ textarea:focus {
     background-size: 24px 24px;
     text-align: left;
 }
-[data-tooltip]:hover:before {
+[data-tooltip]:hover:before, .showtooltip {
     /* needed - do not touch */
     opacity: 1;
     z-index: 1000;
     /* customizable */
     background: #FFF url(/images/josh-hare.png) 8px 9px no-repeat;
     background-size: 24px 24px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 20px;
     top: 0;
-    left: 0;
+    right: 0;
     line-height: 20px;
     position: fixed !important;
+}
+.showtooltip {
+  margin-top:20px;
+    z-index: 900;
 }
 [data-tooltip]:not([tooltip-persistent]):before {
     pointer-events: none;
