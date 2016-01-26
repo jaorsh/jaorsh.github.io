@@ -898,10 +898,21 @@ a.pLink {
   .content {
       width: 100%;
   }
+  .content.slide-out-slow {
+
+    display:none;
+  }
   #badge {
     min-height:100%;
     min-width:100%;
     animation: slide-in 2s forwards;
         -webkit-animation: slide-in 2s forwards;
   }
+  .iframe { padding:5px; }
+  .screenshots img {
+    height: auto;
+    width: auto;
+}
+#minimise, #screenshot, #palette, #change { display:none;}
+.overlay { width:100%; }
 }
