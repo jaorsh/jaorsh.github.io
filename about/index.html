@@ -7,8 +7,8 @@ title: About Me | Josh Hare NZ
       <h2>&nbsp;Hello, Josh Hare</h2>
 
       <div class="tags flex secondary noselect" data-tooltip="What a gross pantone" onclick="pan.dom.colourWheel(this)">designer
-        <br>developer
-        <br>dude</div>
+        <br>&&&
+        <br>developer</div>
 
         <div style="max-width:288px" class="secondary me" data-tooltip="'Climb every mountain (reach),
   Reach for the moon (reach),
@@ -72,7 +72,7 @@ title: About Me | Josh Hare NZ
               </td>
               <td>
                 Exploring, travelling, banter, memories, the internet, the ocean, friends, family, live music, making music, secret music,
-                haXXing, all nighters, smashing out <i>good</i> code, no reception, reception.
+                a decent workflow, smashing out <i>good</i> code, no reception, reception.
               </td>
             </tr>
 
@@ -81,14 +81,12 @@ title: About Me | Josh Hare NZ
                 H8Z
               </td>
               <td>
-                Over analysing stuff, hypocrisy, spelling hypocrisy, social <i>class</i>, over poaching eggs and too much
-                marmite, 20 minute jam from a band you are trying to like but then you see them live and they just jam for
-                20 minutes one dude's got a violin bow scraping his guitar strings it's like cmon play a real song drop the
-                violin guy.
+                Crashing, Over analysing, hypocrisy, spelling hypocrisy, over poaching eggs and too much
+                marmite, 20 minute jams from a band you think you might love but instead you see them live and they just jam for 20 minutes - one dude's got a violin bow scraping his guitar strings and there's a bitter feeling in the crowd air because they aren't The Grateful Dead and no one has heard a song yet. That's the worst!
               </td>
             </tr>
           </table>
-          <p>But a list doesn't say much about me. It even looks like I have more hates then loves. That's simply not true,
+          <p>But a list doesn't say much about me. It even looks like I have more hates then loves. That's simply not true -
             lists can be decieving. So maybe it's better to just look for a context. A context to encompass a thought about
             something a tad real about me.</p>
           <p class="primary"> Well, currently I want to be surrounded by colour - looking out of my window into a bleak yet beautiful Hells Kitchen.
@@ -130,7 +128,7 @@ That's when your dreams will all come true.' - S CLUB 7, R34CH" onclick="pan.dom
       <h3>Webpack</h3>
       <p>We use webpack as a JS builder and dependency retriever reading from `package.json`. It provides a node like front end modular solution for requiring javascript libraries, and turns a spaghetti of dependencies and lose JS files into easy to manage static assets.</p>
       <h3>Gulp</h3>
-      <p>Gulp is used to automate our build process. It generates our javascript we distribute in `dist/app.min.js`. As the filename suggests, the outputted javascript file has all of the scripts needed to run the app. These are minified and concatenated together automatically with gulp. The gulp config leverages `webpack` to use a node like modular javascript require model, and can be found at `gulpfile.js`.</p>
+      <p>Gulp is used to automate our build process. It generates our javascript we distribute in `dist/app.min.js`. As the filename suggests, the outputted javascript file has all of the scripts needed to run the app. These are minified and concatenated together automatically with gulp. The gulp config leverages `webpack` to use a node-like modular javascript require model, and can be found at `gulpfile.js`.</p>
       <h3>Jekyll</h3>
       <p>This webapp is served with Jekyll through GitHub pages. Jekyll is simple to use, either through GitHub or on a local server, you can specify `_templates` and `_includes` to provide structural markup to your static html pages. We are only using includes - header and footer - in this project, as all pages use the same template. You can find the header.html and footer.html in the `_includes` folder. </p>
       <p>Jekyll also can serve clean URL's by structuring index.html files within folders with the given name. http://jaorsh.github.io/about/index.html is  http://jaorsh.github.io/about/ on the front end. In this webapp we are using <a href="https://github.com/browserstate/history.js">History JS</a> to retrieve our pages and populate clean urls, as requests are fired off with Ajax. Still, for manual navigation to say, /about, this feature of Jekyll is great!</p>
