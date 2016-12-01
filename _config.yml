@@ -1,3 +1,4 @@
 exclude: ['/node_modules','entry.js','gulpfile.js','package.json']
 permalink: pretty
 url: https://jaorsh.github.io
+baseurl: https://jaorsh.github.io
