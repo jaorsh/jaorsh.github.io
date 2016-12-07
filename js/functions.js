@@ -69,16 +69,13 @@ exports.dom = {
     var l = ((columns / 2) * size) - (size / 2);
     $('.badge').removeClass('slide-out');
     if (offsetw < 50) {
-
       badge.style.transform = 'translateX(' + l + 'px)';
       badge.style.webkitTransform = 'translateX(' + l + 'px)';
-    } else if (offsetw >= 150) {
-
+    } else if (offsetw > 150) {
       var l = ((columns / 2) * size) - (144);
       badge.style.transform = 'translateX(' + l + 'px)';
       badge.style.webkitTransform = 'translateX(' + l + 'px)';
     } else {
-
       //var l = ((columns / 2) * size) - (144);
       badge.style.transform = 'translateX(' + l + 'px)';
       badge.style.webkitTransform = 'translateX(' + l + 'px)';
